@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'app/routes/app_pages.dart';
+import 'core/themes/app_theme.dart';
 
 void main() {
   runApp(
@@ -21,9 +22,12 @@ class BasketballApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "Application",
+      debugShowCheckedModeBanner: false,
+      title: "Basketball App",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      theme: AppTheme.lightTheme,
+      themeMode: AppTheme.themeMode,
     );
   }
 }
