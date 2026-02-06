@@ -1,4 +1,4 @@
-import 'package:basketball_app/core/themes/app_colors.dart';
+import 'package:basketball_app/app/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppTheme {
